@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { FC } from 'react'
 
-const Home = () => {
+
+type Home_Props = {
+    home_title: string;
+}
+const Home: FC<Home_Props> = ({home_title}) => {
   return (
     <div>
-      
+      {home_title}
     </div>
   )
 }

@@ -19,7 +19,7 @@ const App: FC<AppProps> = ({title,test_one})=> {
     <p>App</p>
     <h1>Prop type test: {title}</h1>
     <h2>{test_one}</h2>
-    <Home/>
+    <Home home_title='Home Testing'/>
     </>
   )
 }
