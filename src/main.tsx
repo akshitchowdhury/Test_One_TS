@@ -5,6 +5,6 @@ import App from './App.tsx'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App title="Vite + React + TS" />
+    <App title="Vite + React + TS" test_one='testing'/>
   </StrictMode>,
 )
