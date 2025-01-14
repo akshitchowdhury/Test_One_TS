@@ -1,29 +1,17 @@
 
 import './App.css'
 import {FC} from 'react'
-import Home from './component/Home/Home';
-import TestTwo from './component/TestTwo/TestTwo';
-import TestThree from './component/TestThree/TestThree';
+import Greetings from './typeComponents/Greetings'
+import GreetingTwo from './typeComponents/GreetingTwo'
 
-// interface AppProps {
-//   title: String;
-// }
 
-type AppProps = {
-  title: string;
-  test_one: string;
-}
-const App: FC<AppProps> = ({title,test_one})=> {
+const App: FC = ()=> {
 
   return (
     
-    <>
-    <p>App</p>
-    <h1>Prop type test: {title}</h1>
-    <h2>{test_one}</h2>
-    <Home home_title='Home Testing'/>
-    <TestTwo test_two="Test Two running"/>
-    <TestThree test_three ="Test three running succesfully"/>
+    <> 
+      <Greetings alias='Sam' age={30}/>
+      <GreetingTwo num1={20} num2={30} />
     </>
   )
 }
