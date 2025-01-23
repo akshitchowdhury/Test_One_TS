@@ -2,10 +2,11 @@
 import './App.css'
 import {FC} from 'react'
 import ColorCarousel from './typeComponents/ColorCarousel'
+import ApiMap from './typeComponents/ApiMap'
 
 
 const App: FC = ()=> {
-
+ 
   return (
     
     <> 
@@ -13,6 +14,7 @@ const App: FC = ()=> {
       <GreetingTwo num1={20} num2={30} />
       <Counter/> */}
       <ColorCarousel/>
+      <ApiMap/>
     </>
   )
 }
